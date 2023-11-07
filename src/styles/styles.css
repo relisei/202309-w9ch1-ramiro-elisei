@@ -48,4 +48,11 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+  min-width: 320px;
+}
+
+.card__picture {
+  padding-bottom: 15px;
 }
