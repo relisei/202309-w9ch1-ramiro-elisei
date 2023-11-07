@@ -6,7 +6,7 @@ const useMovieApi = () => {
 
   const getMovies = useCallback(async () => {
     const response = await fetch(`${apiUrl}?_limit=5`);
-    const movies = (await response.json()) as MovieStructure;
+    const movies = (await response.json()) as MovieStructure[];
 
     return movies;
   }, [apiUrl]);
