@@ -1,7 +1,8 @@
 export interface MovieStructure {
   id: number;
-  neme: string;
+  name: string;
   year: number;
+  director: string;
   description: string;
 }
 

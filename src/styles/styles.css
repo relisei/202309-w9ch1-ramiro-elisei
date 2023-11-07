@@ -43,3 +43,9 @@ li {
 .title {
   font-family: Roboto, sans-serif;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
