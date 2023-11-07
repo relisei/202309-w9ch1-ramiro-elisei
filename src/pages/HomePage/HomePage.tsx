@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import useMovieApi from "../../hooks/useMoviesApi";
 import { useAppDispatch } from "../../store/hooks";
 import { loadMoviesActionCreator } from "../../store/features/movies/moviesSlice";
+import MovieList from "../../components/MovieList/MovieList";
 
 const HomePage = (): React.ReactElement => {
   const dispatch = useAppDispatch();
@@ -15,9 +16,14 @@ const HomePage = (): React.ReactElement => {
   }, [dispatch, getMovies]);
 
   return (
-    <section className="main-container">
-      <h1 className="title">The most curated movies of Michel Gondry</h1>
-    </section>
+    <>
+      <header className="main-container">
+        <h1 className="title">The most curated movies of Michel Gondry</h1>
+      </header>
+      <main>
+        <MovieList />
+      </main>
+    </>
   );
 };
 
