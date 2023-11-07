@@ -37,4 +37,9 @@ li {
 
 .main-container {
   padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
 }
