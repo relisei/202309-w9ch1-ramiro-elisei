@@ -17,6 +17,7 @@ const moviesSlice = createSlice({
       ...currentState,
       movies: action.payload,
     }),
+
     toggleWatchedMovies: (
       currentState,
       action: PayloadAction<number>,
@@ -24,7 +25,7 @@ const moviesSlice = createSlice({
       ...currentState,
       movies: currentState.movies.map((movie) => ({
         ...movie,
-        iSseen: movie.id === action.payload ? !movie.isSeen : movie.isSeen,
+        isSeen: movie.id === action.payload ? !movie.isSeen : movie.isSeen,
       })),
     }),
   },
