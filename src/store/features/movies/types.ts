@@ -3,7 +3,6 @@ export interface MovieStructure {
   name: string;
   picture: string;
   year: number;
-  director: string;
   description: string;
   isSeen: boolean;
 }
