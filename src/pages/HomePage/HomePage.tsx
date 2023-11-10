@@ -3,6 +3,7 @@ import useMovieApi from "../../hooks/useMoviesApi";
 import { useAppDispatch } from "../../store/hooks";
 import { loadMoviesActionCreator } from "../../store/features/movies/moviesSlice";
 import MovieList from "../../components/MovieList/MovieList";
+import Navigation from "../../components/Navigation/Navigation";
 
 const HomePage = (): React.ReactElement => {
   const dispatch = useAppDispatch();
@@ -20,6 +21,7 @@ const HomePage = (): React.ReactElement => {
       <header className="main-container">
         <h1 className="title">The most curated movies of Michel Gondry</h1>
       </header>
+      <Navigation />
       <MovieList />
     </>
   );
