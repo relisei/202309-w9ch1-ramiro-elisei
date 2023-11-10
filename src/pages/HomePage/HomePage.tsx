@@ -20,9 +20,7 @@ const HomePage = (): React.ReactElement => {
       <header className="main-container">
         <h1 className="title">The most curated movies of Michel Gondry</h1>
       </header>
-      <main>
-        <MovieList />
-      </main>
+      <MovieList />
     </>
   );
 };
