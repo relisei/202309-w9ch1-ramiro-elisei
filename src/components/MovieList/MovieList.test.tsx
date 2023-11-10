@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import mockMovies from "../src/mocks/mockData";
+import mockMovies from "../../mocks/mockData";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import MovieList from "../src/components/MovieList/MovieList";
-import { moviesReducer } from "../src/store/features/movies/moviesSlice";
+import MovieList from "./MovieList";
+import { moviesReducer } from "../../store/features/movies/moviesSlice";
 
 describe("Given a MovieList component", () => {
   describe("When it receives an array of movies with 'Eternal Sunshine of the Spotless Mind' and 'The Science of Sleep", () => {
