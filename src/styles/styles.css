@@ -72,8 +72,8 @@ li {
 .card__checkbox {
   margin: 0;
   font: inherit;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 0.15em solid currentColor;
   border-radius: 0.15em;
 }
@@ -85,4 +85,53 @@ li {
 
 .card__picture {
   padding-bottom: 25px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+  padding: 40px 10px;
+}
+
+.form__control {
+  display: flex;
+  width: 400px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+.form__label {
+  width: 100%;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.form__checkbox {
+  margin-right: 100px;
+  font: inherit;
+  width: 22px;
+  height: 22px;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+}
+
+textarea {
+  width: 103%;
+  border-radius: 5px;
+}
+
+button {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #50c905;
+  padding: 10px;
+  font: inherit;
 }
