@@ -35,6 +35,11 @@ li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .main-container {
   padding: 20px;
   text-align: center;
@@ -42,7 +47,7 @@ li {
 
 .title {
   font-family: Roboto, sans-serif;
-  font-size: 38px;
+  font-size: 31px;
 }
 
 .card {
@@ -51,7 +56,7 @@ li {
   text-align: center;
   align-items: center;
   padding: 50px 20px;
-  min-width: 320px;
+  min-width: 290px;
   border: 2px solid #50c905;
   margin-bottom: 30px;
   border-radius: 50px;
@@ -134,4 +139,25 @@ button {
   border: 2px solid #50c905;
   padding: 10px;
   font: inherit;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-size: 19px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.navigation__element {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation__element:hover {
+  color: #50c905;
 }
